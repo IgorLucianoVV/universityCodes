@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container-user">
+    <img src="/resources/public/userIcon.png" style="width: 60px;">
+    <h2 style="margin-right: 1350px; margin-top: 50px; color: rgb(255, 255, 255);">Olá, Igor</h2>
+  </div>
+
+  <div class="container">
+    <h1 style="margin-right: 1400px;">Conta</h1>
+    <h2 style="margin-right: 1280px;" id="balance"></h2>
+    <div class="container-trasacoes">
+      <h1 style="margin-right: 1400px; margin-top: 50px; color: aliceblue;"></h1>
+      <button onclick="showTransactionForm()">Cadastrar Transação</button>
+      <button onclick="fetchTransactions()">Exibir Transações</button>
+      <button onclick="transferToBlockchain()">Minerar Blockchain</button>
+      <button onclick="fetchBlockchain()">Exibir Blockchain</button>
+    </div>
+
+    <div id="transaction-form" style="display: none;">
+      <h2>Cadastrar Nova Transação</h2>
+      <div class="transaction-form">
+        <input id="valor" type="number" placeholder="Valor">
+        <select id="tipo">
+          <option value="receita">Receita</option>
+          <option value="despesa">Despesa</option>
+        </select>
+        <button onclick="addTransaction()">Realizar Transação</button>
+      </div>
+    </div>
+
+    <h2>Transações</h2>
+    <ul id="transactions"></ul>
+    <h2>Blockchain</h2>
+    <div id="blockchain"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

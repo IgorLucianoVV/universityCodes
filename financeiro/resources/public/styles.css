@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    text-align: center;
+  }
+  
+  .container {
+    max-width: auto;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .container-user {
+    max-width: auto;
+    margin: 20px auto;
+    padding: 20px;
+    background: #007bff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .container-trasacoes {
+    text-align: center;
+    background: #ffffff;
+    border-radius: 8px;
+  }
+  
+  button {
+    display: inline-block;
+    margin: 30px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .transaction-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .transaction-form input, .transaction-form select {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .transaction-form button {
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .transaction-form button:hover {
+    background: #218838;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .block {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .block h3 {
+    margin-top: 0;
+  }
+
+  #app {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+}
+
+#json-container {
+    word-wrap: break-word;
+}
+
+.json-key {
+    color: #b64e4e;
+    font-weight: bold;
+}
+
+.json-value {
+    color: #555;
+    margin-left: 10px;
+}
+
+.json-string {
+    color: #4e9cb6;
+}
+
+.json-number {
+    color: #b69e4e;
+}
+
+
+pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
